@@ -19,7 +19,7 @@ const VideoContainer = () => {
     const json = await response.json();
     setVideos(json.items);
   };
-  console.log(videos);
+  // console.log(videos);
   if (videos === null) return <h1>Loading...</h1>;
   return (
     <div className="flex flex-wrap p-3 cursor-pointer">
